@@ -24,3 +24,115 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import "tailwindcss";
+
+:root {
+  --background: #0c0c0d;
+  --foreground: #fff;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #0c0c0d;
+    --button-background: #b292ff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-raleway);
+  /* position: relative; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-raleway);
+}
+.nav-container {
+  /* Frame 40 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 622px;
+  height: 70px;
+  left: calc(50% - 622px / 2);
+  top: 30px;
+  /* overflow-y: scroll; */
+
+  background: rgba(33, 31, 35, 0.35);
+  box-shadow: 0 5px 10px 3px rgba(255, 255, 255, 0.3);
+
+  border: 1px solid #000000;
+  backdrop-filter: blur(17.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 1rem;
+  > ul {
+    width: 100%;
+    > li:hover {
+      transition: color 0.5s ease-in-out;
+      color: #b292ff;
+    }
+  }
+}
+
+.irfan_image {
+  width: 390px;
+  height: 390px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 10px !important;
+  transition: all 0.3s ease-in;
+}
+.swiper-pagination-bullet:hover {
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #b292ff !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-pagination {
+  /* bottom: -20px !important;
+  opacity: 1 !important; */
+
+  height: 20px;
+  margin-top: 20px;
+  position: static !important;
+}
+
+@media (max-width: 440px) {
+  .nav-container {
+    width: calc(100% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container {
+    width: calc(100% - 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+}
