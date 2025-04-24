@@ -1,6 +1,5 @@
 import React from "react";
 import Particles from "react-tsparticles"; // v1.18.1 uses this name
-import { Bounce } from "tsparticles/dist/Options/Classes/Particles/Bounce/Bounce";
 
 const ParticleAnimation = () => {
   return (

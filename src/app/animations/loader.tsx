@@ -1,5 +1,3 @@
-"use client";
-
 import { motion, Variants } from "motion/react";
 
 function LoadingThreeDotsJumping() {

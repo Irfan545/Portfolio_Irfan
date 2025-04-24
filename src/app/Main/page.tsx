@@ -1,11 +1,8 @@
 import React from "react";
-import SplitText from "../animations/text";
-import Image from "next/image";
-import irfan from "../../../public/Images/irfan.png";
-import Link from "next/link";
+
 import { motion } from "framer-motion";
 import HeroSection from "../animations/hero";
-import myImage from "../animations/hero";
+
 import ParticleAnimation from "../animations/particle";
 
 export const Main = () => {

@@ -1,4 +1,3 @@
-"use client";
 // components/SkillsSection.tsx
 import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
