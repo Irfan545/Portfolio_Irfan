@@ -3,7 +3,6 @@
 import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef, useState } from "react";
-import LoadingThreeDotsJumping from "./loader";
 
 export default function SplitText({ text }: { text: string }) {
   const containerRef = useRef<HTMLDivElement>(null);

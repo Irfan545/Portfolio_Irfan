@@ -1,7 +1,7 @@
 "use client";
-import React, { FunctionComponent, useCallback } from "react";
+
 import { motion } from "framer-motion";
-import Img from "../../../public/Images/irfan.png";
+
 import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection: React.FC<{ heading: string; para: string }> = ({

@@ -1,6 +1,6 @@
 "use client";
 import LoadingThreeDotsJumping from "./animations/loader";
-import SplitText from "./animations/text";
+
 import Header from "./Header/page";
 import { useEffect, useState } from "react";
 import { Main } from "./Main/page";
