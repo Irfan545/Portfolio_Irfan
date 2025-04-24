@@ -1,9 +1,9 @@
 "use client";
 import LoadingThreeDotsJumping from "./animations/loader";
 
-import Header from "./Header/page";
+import Header from "./comoponents/page_header";
 import { useEffect, useState } from "react";
-import { Main } from "./Main/page";
+import { Main } from "./comoponents/page_main";
 import SkillsSection from "./comoponents/skills";
 
 export default function Home(): React.JSX.Element {
